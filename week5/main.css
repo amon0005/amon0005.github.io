@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(111, 154, 189);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* this is a comment */
+h1{
+    color: rgb(39, 210, 20);
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
+#headingOne{
+    color: gold;
+}
+h1,h2{
+    text-decoration: underline;
+    color: green;
+}
+.btn{
+    background-color: rgb(155, 188, 143);
+    color: azure;
+    padding: 16px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    box-shadow: 1px 1px 5px 6px  ;
+}
+/* id selector  */
+.intropara{
+    font-style: italic;
+}
+
+article h2{
+    color: brown;
+}
+h2{color: burlywood;}
+.hobbylist{
+    color: blueviolet;
+}
+ul li:nth-child(2n+1){
+    color: brown;
+}
+.secondclass{
+    border: 2px solid white;
+}
+form{
+    background-color: rgb(240, 237, 235);
+    max-width: 500px;
+    padding: 10px auto; 
+    border-radius: 5px;
+}
+input, textarea {
+    display: block;
+    margin: 4px 0;
+    padding: 4px;
+    font-size: 16px;
+    width: 100%;
+}

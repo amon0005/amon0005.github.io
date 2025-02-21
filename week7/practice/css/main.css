@@ -1,0 +1,16 @@
+.container{
+    max-width: 90vw;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+header{
+    background-color: #333;
+    color: aliceblue;
+    padding: 10rem 0;
+    background-image: url("../images/bread.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
