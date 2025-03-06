@@ -21,7 +21,7 @@ header {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: regular;
     padding: 10px 20px;
     border-radius: 8px;
 
@@ -43,6 +43,10 @@ header h1 {
     margin: 0;
 }
 
+h2 {
+    font-weight: regular;
+}
+
 nav {
     background-color: #d4e9e7;
     padding: 1rem 0;
@@ -57,7 +61,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
@@ -95,7 +99,7 @@ nav ul li a {
     text-decoration: none;
     padding: 15px 25px;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: regular;
     border-radius: 5px;
     transition: background-color 0.3 ease;
 }
@@ -127,36 +131,84 @@ article img.float-left {
 /* Contact Form Styles */
 .contact {
     margin: 2rem 0;
+    max-width: 600px;
+    margin-left: auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.my-form {
+    border-width: 3px;
+    border-color: grey;
+    border-style: solid;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.form-elements {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.contact .form-group {
+    margin-bottom: 1.5rem;
 }
 
 .contact label {
     display: block;
-    margin-top: 10px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
 }
 
-.contact input, .contact textarea {
+.contact input, 
+.contact textarea {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
 }
 
-.radio-group {
+.contact textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact .radio-group {
     display:flex;
-    gap: 10px;
-    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
 }
 
+.contact .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: normal;
+}
 
 .contact button {
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 4px;
+    font-size: 1rem;
     cursor: pointer;
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 1rem;
+    transition: background-color 0.3 ease;
 }
 
 .contact button:hover {
