@@ -1,0 +1,45 @@
+header {
+    background-color: darkslategray;
+    color: aliceblue;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+.card{
+    border: 2px solid darkslategray;
+    width: 200px;
+    /* display: inline-block; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+    nav ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}
+
+.cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

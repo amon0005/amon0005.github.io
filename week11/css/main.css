@@ -5,8 +5,10 @@ body{
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,100px);
+    grid-template-rows: repeat(6,200px);
     gap: 1rem;
+
+    align-items: start; 
     /* grid-template-colums: 1fr 200px; */
     /* grid-template-colums: 200px 200px 200px 200px; */
     /* grid-template-columns: repeat (4, 200px);
@@ -22,16 +24,20 @@ body{
 
     /* controlling the thickness of row and column lines with different values */
     /*row-gap column-gap */
-    gap: 1rem 2rem;
+     /* gap: 1rem 2rem;  */
 
 }
 
 
 .box {
-background-color: aquamarine; 
-padding: 2rem;
+   background-color: aquamarine; 
+   padding: 2rem;
  }
-
+.box2 {
+    align-self: center;
+    justify-self: start;
+}
+ 
  @media screen and (min-width: 600px) {
     .container{
         grid-template-columns: 1fr 1fr;
@@ -51,6 +57,7 @@ padding: 2rem;
 
  @media screen and (min-width: 900px) {
     .container{
+         /* same command */
         /* grid-template-columns: 1fr 1fr 1fr; */
         grid-template-columns: repeat(3, 1fr);
     }
@@ -77,3 +84,7 @@ padding: 2rem;
  .box5{
     grid-column: 1/span 2;
     background-color: slategray;}
+
+    .box6{
+        grid-column: 1/span 2;
+    }
