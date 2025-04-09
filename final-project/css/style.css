@@ -1,0 +1,36 @@
+/* CSS Reset */
+
+*, *:before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.root {
+    --primary: #3e6b48;
+    --secondary: #2e4a34;
+    --accent: #f8c537;
+    --dark: #2e4a34;
+    --light: #fff;
+    --gray: #eee;
+    --dark-gray: #ddd;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;  
+}
