@@ -439,6 +439,60 @@ p {
     flex-grow: 1;
 }
 
+.service-card .btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 29px 98px;
+    border-radius: 0;
+    font-weight: 600;
+    text-transform: Title case;
+    letter-spacing: 1px;
+    margin-top: auto;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+
+.service-card .btn:hover {
+    background: var(--primary-dark);
+    transform: translate(-2px);
+}
+
+.service-card .btn i {
+    margin-left: 8px;
+    transform: transform 0.3 ease;
+}
+
+.service-card .btn:hover i {
+    transform: translate(3px);
+}
+
+.service-card:nth-child(1) .btn { 
+    padding: 29px 193px;
+    min-width: 250px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+/* Digital Transformation */
+
+.service-card:nth-child(2) .btn { /* Marketing */
+    padding: 29px 179px;
+    min-width: 250px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.service-card:nth-child(3) .btn,  /* Video */
+.service-card:nth-child(4) .btn, /* Web */
+.service-card:nth-child(4) .btn { /* Print */
+    padding: 29px 98px;
+    width: auto;
+    
+}
+
+
 @media (min-width: 768px) {
     .services-grid {
         grid-template-columns: repeat(2,1fr);
