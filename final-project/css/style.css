@@ -779,10 +779,10 @@ p {
     border-right: none;
 }
 
-
 .hours tr:last-child td {
-    border-bottom: none; /* Add this */
+    border-bottom: none;
 }
+
 .location {
     background: var(--light);
     padding: 30px;
