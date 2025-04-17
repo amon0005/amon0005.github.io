@@ -749,6 +749,7 @@ p {
 .hours h3 {
    margin-bottom: 20px;
    color: var(--primary); 
+   font-size: 2.1rem;
 }
 
 .hours table {
@@ -779,7 +780,9 @@ p {
 }
 
 
-
+.hours tr:last-child td {
+    border-bottom: none; /* Add this */
+}
 .location {
     background: var(--light);
     padding: 30px;
